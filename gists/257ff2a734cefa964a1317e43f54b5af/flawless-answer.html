@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Flawless Answer — Premium virtual operations support for visionary founders. From Foundation to Executive, we handle the backend so you don't have to.">
+<meta name="keywords" content="virtual assistant, operations support, executive assistant, business operations, premium VA services">
+<meta property="og:title" content="Flawless Answer — Premium Operations Support">
+<meta property="og:description" content="Luxury operations support for modern founders. From $275/mo.">
+<meta property="og:type" content="website">
+<title>Flawless Answer — Premium Operations Support</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+--gold:#D4AF37;--gold-light:#E8CC6A;--gold-dark:#B8941E;
+--black:#000000;--white:#FFFFFF;
+--gold-glow:rgba(212,175,55,0.15);--gold-glow-strong:rgba(212,175,55,0.3);
+}
+html{scroll-behavior:smooth;font-size:16px}
+body{background:#000;color:#fff;font-family:'Inter',sans-serif;overflow-x:hidden;line-height:1.6}
+/* SCROLLBAR */
+::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:#000}::-webkit-scrollbar-thumb{background:var(--gold);border-radius:2px}
+/* FLOATING ORBS */
+.orb{position:fixed;border-radius:50%;filter:blur(80px);pointer-events:none;z-index:0;animation:orbFloat 20s ease-in-out infinite}
+.orb-1{width:600px;height:600px;background:radial-gradient(circle,rgba(212,175,55,0.08) 0%,transparent 70%);top:-200px;right:-200px;animation-delay:0s}
+.orb-2{width:400px;height:400px;background:radial-gradient(circle,rgba(212,175,55,0.06) 0%,transparent 70%);bottom:20%;left:-150px;animation-delay:-7s}
+.orb-3{width:300px;height:300px;background:radial-gradient(circle,rgba(212,175,55,0.05) 0%,transparent 70%);top:50%;right:10%;animation-delay:-14s}
+@keyframes orbFloat{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(30px,-30px) scale(1.05)}66%{transform:translate(-20px,20px) scale(0.95)}}
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:0 2rem;height:72px;display:flex;align-items:center;justify-content:space-between;transition:all .4s ease;border-bottom:1px solid transparent}
+nav.scrolled{background:rgba(0,0,0,0.92);backdrop-filter:blur(20px);border-bottom-color:rgba(212,175,55,0.15)}
+.nav-brand{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:500;letter-spacing:.08em;color:#fff;text-decoration:none}
+.nav-brand span{color:var(--gold)}
+.nav-right{display:flex;align-items:center;gap:2rem}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{color:rgba(255,255,255,0.7);text-decoration:none;font-size:.8rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;transition:color .3s}
+.nav-links a:hover{color:var(--gold)}
+.lang-toggle{display:flex;align-items:center;gap:6px;background:rgba(212,175,55,0.1);border:1px solid rgba(212,175,55,0.3);border-radius:20px;padding:4px}
+.lang-btn{background:none;border:none;color:rgba(255,255,255,0.5);font-size:.72rem;font-weight:600;letter-spacing:.1em;padding:4px 10px;border-radius:14px;cursor:pointer;transition:all .3s}
+.lang-btn.active{background:var(--gold);color:#000}
+.nav-cta{background:var(--gold);color:#000;border:none;padding:.5rem 1.2rem;font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;border-radius:2px;transition:all .3s}
+.nav-cta:hover{background:var(--gold-light);box-shadow:0 0 20px rgba(212,175,55,0.4)}
+/* HERO */
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;position:relative;padding:8rem 2rem 4rem;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 40%,rgba(212,175,55,0.06) 0%,transparent 70%)}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(212,175,55,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(212,175,55,0.03) 1px,transparent 1px);background-size:80px 80px;mask-image:radial-gradient(ellipse 70% 70% at 50% 50%,black 0%,transparent 100%)}
+.hero-content{position:relative;z-index:1;text-align:center;max-width:900px}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(212,175,55,0.3);border-radius:20px;padding:.4rem 1rem;margin-bottom:2rem;background:rgba(212,175,55,0.05)}
+.hero-badge span{font-size:.72rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--gold)}
+.hero-badge::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--gold);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.8)}}
+h1{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,8vw,6.5rem);font-weight:300;line-height:1.05;letter-spacing:-.02em;margin-bottom:1.5rem}
+.headline-gold{background:linear-gradient(135deg,var(--gold) 0%,var(--gold-light) 50%,var(--gold) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-sub{font-size:clamp(1rem,2vw,1.25rem);color:rgba(255,255,255,0.65);max-width:600px;margin:0 auto 2.5rem;font-weight:300;line-height:1.8}
+.hero-cta-group{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:3rem}
+.btn-primary{background:var(--gold);color:#000;border:none;padding:1rem 2.5rem;font-size:.85rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;border-radius:2px;transition:all .3s;position:relative;overflow:hidden}
+.btn-primary::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,transparent 0%,rgba(255,255,255,0.2) 50%,transparent 100%);transform:translateX(-100%);transition:transform .5s}
+.btn-primary:hover::after{transform:translateX(100%)}
+.btn-primary:hover{background:var(--gold-light);box-shadow:0 0 40px rgba(212,175,55,0.5);transform:translateY(-1px)}
+.btn-secondary{background:transparent;color:rgba(255,255,255,0.8);border:1px solid rgba(212,175,55,0.4);padding:1rem 2.5rem;font-size:.85rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;border-radius:2px;transition:all .3s}
+.btn-secondary:hover{border-color:var(--gold);color:var(--gold);background:rgba(212,175,55,0.05)}
+/* TRUST STRIP */
+.trust-strip{position:relative;z-index:1;border-top:1px solid rgba(212,175,55,0.1);padding:2rem 0;display:flex;align-items:center;justify-content:center;gap:3rem;flex-wrap:wrap}
+.trust-item{display:flex;align-items:center;gap:.5rem;color:rgba(255,255,255,0.4);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase}
+.trust-dot{width:3px;height:3px;border-radius:50%;background:var(--gold);opacity:.5}
+/* SECTIONS */
+section{position:relative;padding:6rem 2rem;z-index:1}
+.section-tag{display:inline-block;font-size:.68rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;opacity:.8}
+.section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,5vw,3.5rem);font-weight:300;line-height:1.1;margin-bottom:1.5rem}
+.section-sub{color:rgba(255,255,255,0.55);font-size:1rem;line-height:1.8;max-width:560px}
+/* PRICING */
+.pricing-section{background:linear-gradient(180deg,#000 0%,rgba(212,175,55,0.02) 50%,#000 100%)}
+.pricing-header{text-align:center;margin-bottom:4rem}
+.pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;max-width:1200px;margin:0 auto}
+.pricing-card{position:relative;border:1px solid rgba(212,175,55,0.15);border-radius:4px;padding:2.5rem;background:rgba(255,255,255,0.02);backdrop-filter:blur(10px);transition:all .4s ease;cursor:pointer;overflow:hidden}
+.pricing-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(212,175,55,0.05) 0%,transparent 60%);opacity:0;transition:opacity .4s}
+.pricing-card:hover::before{opacity:1}
+.pricing-card:hover{border-color:rgba(212,175,55,0.5);transform:translateY(-4px);box-shadow:0 20px 60px rgba(212,175,55,0.12)}
+.pricing-card.featured{border-color:rgba(212,175,55,0.5);background:rgba(212,175,55,0.04)}
+.featured-badge{position:absolute;top:-1px;left:50%;transform:translateX(-50%);background:var(--gold);color:#000;font-size:.65rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;padding:.25rem 1rem;border-radius:0 0 4px 4px}
+.tier-name{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:400;color:#fff;margin-bottom:.5rem}
+.tier-price{font-size:2.8rem;font-weight:300;color:var(--gold);line-height:1;margin-bottom:.25rem}
+.tier-price sup{font-size:1rem;vertical-align:top;margin-top:.5rem}
+.tier-price span{font-size:.85rem;color:rgba(255,255,255,0.4);font-weight:400}
+.tier-desc{font-size:.82rem;color:rgba(255,255,255,0.5);margin-bottom:2rem;line-height:1.6}
+.tier-features{list-style:none;margin-bottom:2rem}
+.tier-features li{padding:.5rem 0;font-size:.82rem;color:rgba(255,255,255,0.7);border-bottom:1px solid rgba(255,255,255,0.05);display:flex;align-items:center;gap:.75rem}
+.tier-features li::before{content:'✦';color:var(--gold);font-size:.6rem;flex-shrink:0}
+.tier-btn{width:100%;padding:.85rem;font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;border-radius:2px;transition:all .3s}
+.tier-btn-outline{background:transparent;color:rgba(255,255,255,0.7);border:1px solid rgba(212,175,55,0.3)}
+.tier-btn-outline:hover{border-color:var(--gold);color:var(--gold);background:rgba(212,175,55,0.05)}
+.tier-btn-gold{background:var(--gold);color:#000;border:none}
+.tier-btn-gold:hover{background:var(--gold-light);box-shadow:0 0 30px rgba(212,175,55,0.4)}
+/* COMPARISON */
+.comparison-section{max-width:900px;margin:0 auto}
+.comparison-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:3rem}
+.comparison-card{border:1px solid rgba(212,175,55,0.12);border-radius:4px;padding:2.5rem;background:rgba(255,255,255,0.01)}
+.comparison-card.modern{border-color:rgba(212,175,55,0.3);background:rgba(212,175,55,0.03)}
+.comparison-label{font-size:.7rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin-bottom:1.5rem}
+.comparison-card.traditional .comparison-label{color:rgba(255,255,255,0.3)}
+.comparison-card.modern .comparison-label{color:var(--gold)}
+.comparison-list{list-style:none}
+.comparison-list li{padding:.6rem 0;font-size:.85rem;color:rgba(255,255,255,0.65);border-bottom:1px solid rgba(255,255,255,0.04);display:flex;align-items:flex-start;gap:.75rem;line-height:1.4}
+.comparison-card.traditional .comparison-list li::before{content:'✗';color:rgba(255,255,255,0.2);flex-shrink:0}
+.comparison-card.modern .comparison-list li::before{content:'✦';color:var(--gold);font-size:.6rem;flex-shrink:0;margin-top:.15rem}
+/* FOOTER */
+footer{border-top:1px solid rgba(212,175,55,0.12);padding:3rem 2rem;text-align:center;position:relative;z-index:1}
+.footer-brand{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;margin-bottom:.5rem}
+.footer-brand span{color:var(--gold)}
+.footer-tagline{color:rgba(255,255,255,0.3);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:2rem}
+.footer-links{display:flex;justify-content:center;gap:2rem;margin-bottom:2rem;flex-wrap:wrap}
+.footer-links a{color:rgba(255,255,255,0.35);font-size:.75rem;letter-spacing:.08em;text-decoration:none;transition:color .3s}
+.footer-links a:hover{color:var(--gold)}
+.footer-copy{color:rgba(255,255,255,0.2);font-size:.72rem}
+/* DIVIDER */
+.gold-divider{width:60px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:1.5rem auto}
+/* RESPONSIVE */
+@media(max-width:768px){
+  .nav-links{display:none}
+  .comparison-grid{grid-template-columns:1fr}
+  .pricing-grid{grid-template-columns:1fr}
+  .hero-cta-group{flex-direction:column;align-items:center}
+  .trust-strip{gap:1.5rem}
+}
+/* SCROLL REVEAL */
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+</style>
+</head>
+<body>
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+
+<nav id="navbar">
+  <a href="#" class="nav-brand">Flawless <span>Answer</span></a>
+  <div class="nav-right">
+    <ul class="nav-links">
+      <li><a href="#services" data-en="Services" data-fr="Services">Services</a></li>
+      <li><a href="#pricing" data-en="Pricing" data-fr="Tarifs">Pricing</a></li>
+      <li><a href="#compare" data-en="Why Us" data-fr="Pourquoi Nous">Why Us</a></li>
+    </ul>
+    <div class="lang-toggle">
+      <button class="lang-btn active" id="btn-en" onclick="setLang('en')">EN</button>
+      <button class="lang-btn" id="btn-fr" onclick="setLang('fr')">FR</button>
+    </div>
+    <button class="nav-cta" data-en="Start My Plan" data-fr="Commencer" onclick="document.getElementById('pricing').scrollIntoView({behavior:'smooth'})">Start My Plan</button>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span data-en="Premium Operations Partner" data-fr="Partenaire Opérationnel Premium">Premium Operations Partner</span>
+    </div>
+    <h1>
+      <span data-en="Your Business," data-fr="Votre Entreprise,">Your Business,</span><br>
+      <span class="headline-gold" data-en="Finally Flawless." data-fr="Enfin Parfaite.">Finally Flawless.</span>
+    </h1>
+    <p class="hero-sub" data-en="Stop drowning in the details that drain your brilliance. Flawless Answer delivers executive-level operations support — so you can lead at the level you were built for." data-fr="Arrêtez de vous noyer dans les détails qui épuisent votre brillance. Flawless Answer offre un soutien opérationnel de niveau exécutif — pour que vous puissiez diriger au niveau pour lequel vous êtes fait.">Stop drowning in the details that drain your brilliance. Flawless Answer delivers executive-level operations support — so you can lead at the level you were built for.</p>
+    <div class="hero-cta-group">
+      <button class="btn-primary" data-en="Start My Plan" data-fr="Commencer Mon Plan" onclick="document.getElementById('pricing').scrollIntoView({behavior:'smooth'})">Start My Plan</button>
+      <button class="btn-secondary" data-en="Book a Discovery Call" data-fr="Réserver un Appel" onclick="alert('Calendly integration coming soon')">Book a Discovery Call</button>
+    </div>
+    <div class="trust-strip">
+      <div class="trust-item"><span data-en="Trusted by 200+ Founders" data-fr="Fait Confiance par 200+ Fondateurs">Trusted by 200+ Founders</span></div>
+      <div class="trust-dot"></div>
+      <div class="trust-item"><span data-en="4.9★ Average Rating" data-fr="Note Moyenne 4.9★">4.9★ Average Rating</span></div>
+      <div class="trust-dot"></div>
+      <div class="trust-item"><span data-en="48h Onboarding" data-fr="Intégration en 48h">48h Onboarding</span></div>
+      <div class="trust-dot"></div>
+      <div class="trust-item"><span data-en="Cancel Anytime" data-fr="Annulez à Tout Moment">Cancel Anytime</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing" class="pricing-section reveal">
+  <div class="pricing-header">
+    <div class="section-tag" data-en="Investment" data-fr="Investissement">Investment</div>
+    <h2 class="section-title" data-en="Choose Your Level of Support" data-fr="Choisissez Votre Niveau de Soutien">Choose Your Level of Support</h2>
+    <div class="gold-divider"></div>
+    <p class="section-sub" style="margin:0 auto;text-align:center" data-en="Every plan is month-to-month. No contracts. No surprises. Just exceptional operations support delivered with precision." data-fr="Chaque plan est mensuel. Pas de contrats. Pas de surprises. Juste un soutien opérationnel exceptionnel livré avec précision.">Every plan is month-to-month. No contracts. No surprises. Just exceptional operations support delivered with precision.</p>
+  </div>
+  <div class="pricing-grid">
+    <div class="pricing-card reveal">
+      <div class="tier-name" data-en="Foundation" data-fr="Fondation">Foundation</div>
+      <div class="tier-price"><sup>$</sup>275<span data-en="/mo" data-fr="/mois">/mo</span></div>
+      <p class="tier-desc" data-en="The essential operations layer for early-stage founders ready to delegate." data-fr="La couche opérationnelle essentielle pour les fondateurs en phase initiale.">The essential operations layer for early-stage founders ready to delegate.</p>
+      <ul class="tier-features">
+        <li data-en="10 hrs/month dedicated support" data-fr="10h/mois de soutien dédié">10 hrs/month dedicated support</li>
+        <li data-en="Email & calendar management" data-fr="Gestion des emails et calendrier">Email & calendar management</li>
+        <li data-en="Task coordination & follow-ups" data-fr="Coordination des tâches et suivi">Task coordination & follow-ups</li>
+        <li data-en="Weekly progress report" data-fr="Rapport hebdomadaire de progression">Weekly progress report</li>
+        <li data-en="Response within 24 hours" data-fr="Réponse sous 24 heures">Response within 24 hours</li>
+      </ul>
+      <button class="tier-btn tier-btn-outline" data-en="Select Foundation" data-fr="Choisir Fondation">Select Foundation</button>
+    </div>
+    <div class="pricing-card featured reveal">
+      <div class="featured-badge" data-en="Most Popular" data-fr="Plus Populaire">Most Popular</div>
+      <div class="tier-name" data-en="Growth" data-fr="Croissance">Growth</div>
+      <div class="tier-price"><sup>$</sup>350<span data-en="/mo" data-fr="/mois">/mo</span></div>
+      <p class="tier-desc" data-en="Expanded support for founders scaling fast and needing a true operations partner." data-fr="Soutien étendu pour les fondateurs qui grandissent vite.">Expanded support for founders scaling fast and needing a true operations partner.</p>
+      <ul class="tier-features">
+        <li data-en="20 hrs/month dedicated support" data-fr="20h/mois de soutien dédié">20 hrs/month dedicated support</li>
+        <li data-en="Everything in Foundation" data-fr="Tout dans Fondation">Everything in Foundation</li>
+        <li data-en="Project management & tracking" data-fr="Gestion et suivi de projets">Project management & tracking</li>
+        <li data-en="Vendor & contractor liaison" data-fr="Liaison fournisseurs et contractuels">Vendor & contractor liaison</li>
+        <li data-en="Same-day response guarantee" data-fr="Garantie de réponse le jour même">Same-day response guarantee</li>
+      </ul>
+      <button class="tier-btn tier-btn-gold" data-en="Select Growth" data-fr="Choisir Croissance">Select Growth</button>
+    </div>
+    <div class="pricing-card reveal">
+      <div class="tier-name" data-en="Expansion" data-fr="Expansion">Expansion</div>
+      <div class="tier-price"><sup>$</sup>450<span data-en="/mo" data-fr="/mois">/mo</span></div>
+      <p class="tier-desc" data-en="For leaders who demand full operational coverage and proactive strategic support." data-fr="Pour les leaders qui exigent une couverture opérationnelle complète.">For leaders who demand full operational coverage and proactive strategic support.</p>
+      <ul class="tier-features">
+        <li data-en="35 hrs/month dedicated support" data-fr="35h/mois de soutien dédié">35 hrs/month dedicated support</li>
+        <li data-en="Everything in Growth" data-fr="Tout dans Croissance">Everything in Growth</li>
+        <li data-en="SOP creation & documentation" data-fr="Création de SOP et documentation">SOP creation & documentation</li>
+        <li data-en="Team onboarding support" data-fr="Soutien à l'intégration d'équipe">Team onboarding support</li>
+        <li data-en="Priority response within 4 hours" data-fr="Réponse prioritaire sous 4 heures">Priority response within 4 hours</li>
+      </ul>
+      <button class="tier-btn tier-btn-outline" data-en="Select Expansion" data-fr="Choisir Expansion">Select Expansion</button>
+    </div>
+    <div class="pricing-card reveal">
+      <div class="tier-name" data-en="Executive" data-fr="Exécutif">Executive</div>
+      <div class="tier-price"><sup>$</sup>575<span data-en="/mo" data-fr="/mois">/mo</span></div>
+      <p class="tier-desc" data-en="The pinnacle of operations excellence. Full-spectrum support for high-performance executives." data-fr="Le summum de l'excellence opérationnelle. Soutien à spectre complet.">The pinnacle of operations excellence. Full-spectrum support for high-performance executives.</p>
+      <ul class="tier-features">
+        <li data-en="Unlimited hrs — full coverage" data-fr="Heures illimitées — couverture complète">Unlimited hrs — full coverage</li>
+        <li data-en="Everything in Expansion" data-fr="Tout dans Expansion">Everything in Expansion</li>
+        <li data-en="C-suite calendar & travel ops" data-fr="Calendrier C-suite et opérations de voyage">C-suite calendar & travel ops</li>
+        <li data-en="Fractional COO-level advisory" data-fr="Conseil niveau COO fractionné">Fractional COO-level advisory</li>
+        <li data-en="Dedicated concierge line" data-fr="Ligne de conciergerie dédiée">Dedicated concierge line</li>
+      </ul>
+      <button class="tier-btn tier-btn-outline" data-en="Select Executive" data-fr="Choisir Exécutif">Select Executive</button>
+    </div>
+  </div>
+</section>
+
+<section id="compare" style="padding:6rem 2rem">
+  <div class="comparison-section">
+    <div style="text-align:center;margin-bottom:1rem">
+      <div class="section-tag" data-en="The Difference" data-fr="La Différence">The Difference</div>
+      <h2 class="section-title" data-en="Modern vs. Traditional" data-fr="Moderne vs. Traditionnel">Modern vs. Traditional</h2>
+      <div class="gold-divider"></div>
+    </div>
+    <div class="comparison-grid reveal">
+      <div class="comparison-card traditional">
+        <div class="comparison-label" data-en="Traditional Hire" data-fr="Embauche Traditionnelle">Traditional Hire</div>
+        <ul class="comparison-list">
+          <li data-en="$50,000–$80,000/yr salary + benefits" data-fr="Salaire 50 000–80 000$/an + avantages">$50,000–$80,000/yr salary + benefits</li>
+          <li data-en="Weeks to recruit, vet, and onboard" data-fr="Des semaines pour recruter et intégrer">Weeks to recruit, vet, and onboard</li>
+          <li data-en="Office space & equipment overhead" data-fr="Frais de bureau et équipement">Office space & equipment overhead</li>
+          <li data-en="Limited to one person's skill set" data-fr="Limité aux compétences d'une seule personne">Limited to one person's skill set</li>
+          <li data-en="Sick days, vacations, turnover risk" data-fr="Congés maladie, vacances, risque de turnover">Sick days, vacations, turnover risk</li>
+          <li data-en="Rigid 9–5 availability" data-fr="Disponibilité rigide de 9h à 17h">Rigid 9–5 availability</li>
+        </ul>
+      </div>
+      <div class="comparison-card modern">
+        <div class="comparison-label" data-en="Flawless Answer" data-fr="Flawless Answer">Flawless Answer</div>
+        <ul class="comparison-list">
+          <li data-en="From $275/mo — no hidden costs" data-fr="À partir de 275$/mois — sans frais cachés">From $275/mo — no hidden costs</li>
+          <li data-en="Onboarded in 48 hours, guaranteed" data-fr="Intégré en 48 heures, garanti">Onboarded in 48 hours, guaranteed</li>
+          <li data-en="Fully remote — zero overhead" data-fr="Entièrement à distance — zéro surcoût">Fully remote — zero overhead</li>
+          <li data-en="Expert team across all disciplines" data-fr="Équipe d'experts dans toutes les disciplines">Expert team across all disciplines</li>
+          <li data-en="Consistent, uninterrupted coverage" data-fr="Couverture continue et constante">Consistent, uninterrupted coverage</li>
+          <li data-en="Flexible hours — built around you" data-fr="Horaires flexibles — adaptés à vous">Flexible hours — built around you</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-brand">Flawless <span>Answer</span></div>
+  <div class="footer-tagline" data-en="Premium Operations Support — Built for Visionaries" data-fr="Soutien Opérationnel Premium — Conçu pour les Visionnaires">Premium Operations Support — Built for Visionaries</div>
+  <div class="footer-links">
+    <a href="#" data-en="Privacy Policy" data-fr="Politique de Confidentialité">Privacy Policy</a>
+    <a href="#" data-en="Terms of Service" data-fr="Conditions d'Utilisation">Terms of Service</a>
+    <a href="#" data-en="Contact" data-fr="Contact">Contact</a>
+  </div>
+  <div class="footer-copy">&copy; 2025 Flawless Answer. All rights reserved.</div>
+</footer>
+
+<script>
+// NAV SCROLL
+window.addEventListener('scroll',()=>{
+  document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>50);
+});
+// SCROLL REVEAL
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')});
+},{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+// LANGUAGE TOGGLE
+function setLang(lang){
+  document.getElementById('btn-en').classList.toggle('active',lang==='en');
+  document.getElementById('btn-fr').classList.toggle('active',lang==='fr');
+  document.querySelectorAll('[data-en]').forEach(el=>{
+    if(el.dataset[lang])el.textContent=el.dataset[lang];
+  });
+}
+</script>
+</body>
+</html>
